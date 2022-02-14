@@ -7,7 +7,19 @@
 
 <script>
     export default {
-        props:["name","email"]
+        props:{
+            name:{
+                type:String,
+                required:true,
+                default: "name given"
+            },
+            email:{
+                type:String,
+                required:true,
+                default: "email given"
+            }
+
+        }
     }
 </script>
 
